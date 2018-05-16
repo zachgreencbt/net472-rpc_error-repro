@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SimplifiedModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="Company_Id" />
+          </Key>
+          <Property Name="Company_Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Person_Id" />
+          </Key>
+          <Property Name="Person_Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Company_Id" Type="int" Nullable="false" />
+          <Property Name="Filter_Property_1" Type="nvarchar(max)" />
+          <Property Name="Filter_Property_2" Type="float" />
+          <Property Name="Addtional_Property_1" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_2" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_3" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_4" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_5" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_6" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_7" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_8" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_9" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_10" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_11" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_12" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_13" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_14" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_15" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_16" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_17" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_18" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_19" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_20" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_21" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_22" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_23" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_24" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_25" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_26" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_27" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_28" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_29" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_30" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_31" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_32" Type="int" />
+          <Property Name="Addtional_Property_33" Type="int" />
+          <Property Name="Addtional_Property_34" Type="int" />
+          <Property Name="Addtional_Property_35" Type="int" />
+          <Property Name="Addtional_Property_36" Type="datetime" />
+          <Property Name="Addtional_Property_37" Type="int" />
+          <Property Name="Addtional_Property_38" Type="int" />
+          <Property Name="Addtional_Property_39" Type="float" />
+          <Property Name="Addtional_Property_40" Type="int" />
+          <Property Name="Addtional_Property_41" Type="varchar" MaxLength="2000" />
+          <Property Name="Addtional_Property_42" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_43" Type="varchar" MaxLength="50" />
+          <Property Name="Addtional_Property_44" Type="int" />
+          <Property Name="Addtional_Property_45" Type="varchar" MaxLength="25" />
+          <Property Name="Addtional_Property_46" Type="int" />
+          <Property Name="Addtional_Property_47" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Addtional_Property_48" Type="bit" />
+          <Property Name="Addtional_Property_49" Type="bit" />
+          <Property Name="Addtional_Property_50" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_51" Type="float" />
+          <Property Name="Addtional_Property_52" Type="bit" />
+          <Property Name="Addtional_Property_53" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_54" Type="varchar" MaxLength="100" />
+          <Property Name="Addtional_Property_55" Type="int" />
+          <Property Name="Addtional_Property_56" Type="int" />
+          <Property Name="Addtional_Property_57" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_58" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_59" Type="varchar" MaxLength="150" />
+          <Property Name="Addtional_Property_60" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_61" Type="bit" />
+          <Property Name="Addtional_Property_62" Type="int" />
+          <Property Name="Addtional_Property_63" Type="int" />
+          <Property Name="Addtional_Property_64" Type="int" />
+          <Property Name="Addtional_Property_65" Type="int" />
+          <Property Name="Addtional_Property_66" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_67" Type="int" />
+          <Property Name="Addtional_Property_68" Type="int" />
+          <Property Name="Addtional_Property_69" Type="int" />
+          <Property Name="Addtional_Property_70" Type="int" />
+          <Property Name="Addtional_Property_71" Type="uniqueidentifier" />
+          <Property Name="Addtional_Property_72" Type="int" />
+          <Property Name="Addtional_Property_73" Type="int" />
+          <Property Name="Addtional_Property_74" Type="int" />
+          <Property Name="Addtional_Property_75" Type="int" />
+          <Property Name="Addtional_Property_76" Type="datetime" />
+          <Property Name="Addtional_Property_77" Type="int" />
+          <Property Name="Addtional_Property_78" Type="varchar" MaxLength="500" />
+          <Property Name="Addtional_Property_79" Type="datetime" />
+          <Property Name="Addtional_Property_80" Type="int" />
+          <Property Name="Addtional_Property_81" Type="varchar" MaxLength="500" />
+          <Property Name="Addtional_Property_82" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_83" Type="int" />
+          <Property Name="Addtional_Property_84" Type="datetime" />
+          <Property Name="Addtional_Property_85" Type="int" />
+          <Property Name="Addtional_Property_86" Type="int" />
+          <Property Name="Addtional_Property_87" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\ZGREEN\SOURCE\REPOS\ISSUEREPRO\MODELS\DATABASE1.MDF.dbo.Person_WithMoreInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Person_WithMoreInfo">
+          <Key>
+            <PropertyRef Name="Person_Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Company_Id" />
+            <PropertyRef Name="Addtional_Property_47" />
+            <PropertyRef Name="Addtional_Property_60" />
+            <PropertyRef Name="Addtional_Property_66" />
+            <PropertyRef Name="Addtional_Property_82" />
+          </Key>
+          <Property Name="Person_Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Company_Id" Type="int" Nullable="false" />
+          <Property Name="Filter_Property_1" Type="nvarchar(max)" />
+          <Property Name="Filter_Property_2" Type="float" />
+          <Property Name="Addtional_Property_1" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_2" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_3" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_4" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_5" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_6" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_7" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_8" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_9" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_10" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_11" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_12" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_13" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_14" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_15" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_16" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_17" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_18" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_19" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_20" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_21" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_22" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_23" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_24" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_25" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_26" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_27" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_28" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_29" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_30" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_31" Type="nvarchar(max)" />
+          <Property Name="Addtional_Property_32" Type="int" />
+          <Property Name="Addtional_Property_33" Type="int" />
+          <Property Name="Addtional_Property_34" Type="int" />
+          <Property Name="Addtional_Property_35" Type="int" />
+          <Property Name="Addtional_Property_36" Type="datetime" />
+          <Property Name="Addtional_Property_37" Type="int" />
+          <Property Name="Addtional_Property_38" Type="int" />
+          <Property Name="Addtional_Property_39" Type="float" />
+          <Property Name="Addtional_Property_40" Type="int" />
+          <Property Name="Addtional_Property_41" Type="varchar" MaxLength="2000" />
+          <Property Name="Addtional_Property_42" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_43" Type="varchar" MaxLength="50" />
+          <Property Name="Addtional_Property_44" Type="int" />
+          <Property Name="Addtional_Property_45" Type="varchar" MaxLength="25" />
+          <Property Name="Addtional_Property_46" Type="int" />
+          <Property Name="Addtional_Property_47" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Addtional_Property_48" Type="bit" />
+          <Property Name="Addtional_Property_49" Type="bit" />
+          <Property Name="Addtional_Property_50" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_51" Type="float" />
+          <Property Name="Addtional_Property_52" Type="bit" />
+          <Property Name="Addtional_Property_53" Type="varchar" MaxLength="125" />
+          <Property Name="Addtional_Property_54" Type="varchar" MaxLength="100" />
+          <Property Name="Addtional_Property_55" Type="int" />
+          <Property Name="Addtional_Property_56" Type="int" />
+          <Property Name="Addtional_Property_57" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_58" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_59" Type="varchar" MaxLength="150" />
+          <Property Name="Addtional_Property_60" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_61" Type="bit" />
+          <Property Name="Addtional_Property_62" Type="int" />
+          <Property Name="Addtional_Property_63" Type="int" />
+          <Property Name="Addtional_Property_64" Type="int" />
+          <Property Name="Addtional_Property_65" Type="int" />
+          <Property Name="Addtional_Property_66" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_67" Type="int" />
+          <Property Name="Addtional_Property_68" Type="int" />
+          <Property Name="Addtional_Property_69" Type="int" />
+          <Property Name="Addtional_Property_70" Type="int" />
+          <Property Name="Addtional_Property_71" Type="uniqueidentifier" />
+          <Property Name="Addtional_Property_72" Type="int" />
+          <Property Name="Addtional_Property_73" Type="int" />
+          <Property Name="Addtional_Property_74" Type="int" />
+          <Property Name="Addtional_Property_75" Type="int" />
+          <Property Name="Addtional_Property_76" Type="datetime" />
+          <Property Name="Addtional_Property_77" Type="int" />
+          <Property Name="Addtional_Property_78" Type="varchar" MaxLength="500" />
+          <Property Name="Addtional_Property_79" Type="datetime" />
+          <Property Name="Addtional_Property_80" Type="int" />
+          <Property Name="Addtional_Property_81" Type="varchar" MaxLength="500" />
+          <Property Name="Addtional_Property_82" Type="bit" Nullable="false" />
+          <Property Name="Addtional_Property_83" Type="int" />
+          <Property Name="Addtional_Property_84" Type="datetime" />
+          <Property Name="Addtional_Property_85" Type="int" />
+          <Property Name="Addtional_Property_86" Type="int" />
+          <Property Name="Addtional_Property_87" Type="int" />
+          <Property Name="Unique_Id" Type="uniqueidentifier" />
+        </EntityType>
+        <Association Name="Person_FK_Company_Id">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Person_GetForCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Company_Id" Type="int" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="Person_Id" Type="int" Nullable="false" />
+                <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+                <Property Name="Company_Id" Type="int" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <EntityContainer Name="SimplifiedModelStoreContainer">
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person_WithMoreInfo" EntityType="Self.Person_WithMoreInfo" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Person_WithMoreInfo].[Person_Id] AS [Person_Id], 
+    [Person_WithMoreInfo].[Name] AS [Name], 
+    [Person_WithMoreInfo].[Company_Id] AS [Company_Id], 
+    [Person_WithMoreInfo].[Filter_Property_1] AS [Filter_Property_1], 
+    [Person_WithMoreInfo].[Filter_Property_2] AS [Filter_Property_2], 
+    [Person_WithMoreInfo].[Addtional_Property_1] AS [Addtional_Property_1], 
+    [Person_WithMoreInfo].[Addtional_Property_2] AS [Addtional_Property_2], 
+    [Person_WithMoreInfo].[Addtional_Property_3] AS [Addtional_Property_3], 
+    [Person_WithMoreInfo].[Addtional_Property_4] AS [Addtional_Property_4], 
+    [Person_WithMoreInfo].[Addtional_Property_5] AS [Addtional_Property_5], 
+    [Person_WithMoreInfo].[Addtional_Property_6] AS [Addtional_Property_6], 
+    [Person_WithMoreInfo].[Addtional_Property_7] AS [Addtional_Property_7], 
+    [Person_WithMoreInfo].[Addtional_Property_8] AS [Addtional_Property_8], 
+    [Person_WithMoreInfo].[Addtional_Property_9] AS [Addtional_Property_9], 
+    [Person_WithMoreInfo].[Addtional_Property_10] AS [Addtional_Property_10], 
+    [Person_WithMoreInfo].[Addtional_Property_11] AS [Addtional_Property_11], 
+    [Person_WithMoreInfo].[Addtional_Property_12] AS [Addtional_Property_12], 
+    [Person_WithMoreInfo].[Addtional_Property_13] AS [Addtional_Property_13], 
+    [Person_WithMoreInfo].[Addtional_Property_14] AS [Addtional_Property_14], 
+    [Person_WithMoreInfo].[Addtional_Property_15] AS [Addtional_Property_15], 
+    [Person_WithMoreInfo].[Addtional_Property_16] AS [Addtional_Property_16], 
+    [Person_WithMoreInfo].[Addtional_Property_17] AS [Addtional_Property_17], 
+    [Person_WithMoreInfo].[Addtional_Property_18] AS [Addtional_Property_18], 
+    [Person_WithMoreInfo].[Addtional_Property_19] AS [Addtional_Property_19], 
+    [Person_WithMoreInfo].[Addtional_Property_20] AS [Addtional_Property_20], 
+    [Person_WithMoreInfo].[Addtional_Property_21] AS [Addtional_Property_21], 
+    [Person_WithMoreInfo].[Addtional_Property_22] AS [Addtional_Property_22], 
+    [Person_WithMoreInfo].[Addtional_Property_23] AS [Addtional_Property_23], 
+    [Person_WithMoreInfo].[Addtional_Property_24] AS [Addtional_Property_24], 
+    [Person_WithMoreInfo].[Addtional_Property_25] AS [Addtional_Property_25], 
+    [Person_WithMoreInfo].[Addtional_Property_26] AS [Addtional_Property_26], 
+    [Person_WithMoreInfo].[Addtional_Property_27] AS [Addtional_Property_27], 
+    [Person_WithMoreInfo].[Addtional_Property_28] AS [Addtional_Property_28], 
+    [Person_WithMoreInfo].[Addtional_Property_29] AS [Addtional_Property_29], 
+    [Person_WithMoreInfo].[Addtional_Property_30] AS [Addtional_Property_30], 
+    [Person_WithMoreInfo].[Addtional_Property_31] AS [Addtional_Property_31], 
+    [Person_WithMoreInfo].[Addtional_Property_32] AS [Addtional_Property_32], 
+    [Person_WithMoreInfo].[Addtional_Property_33] AS [Addtional_Property_33], 
+    [Person_WithMoreInfo].[Addtional_Property_34] AS [Addtional_Property_34], 
+    [Person_WithMoreInfo].[Addtional_Property_35] AS [Addtional_Property_35], 
+    [Person_WithMoreInfo].[Addtional_Property_36] AS [Addtional_Property_36], 
+    [Person_WithMoreInfo].[Addtional_Property_37] AS [Addtional_Property_37], 
+    [Person_WithMoreInfo].[Addtional_Property_38] AS [Addtional_Property_38], 
+    [Person_WithMoreInfo].[Addtional_Property_39] AS [Addtional_Property_39], 
+    [Person_WithMoreInfo].[Addtional_Property_40] AS [Addtional_Property_40], 
+    [Person_WithMoreInfo].[Addtional_Property_41] AS [Addtional_Property_41], 
+    [Person_WithMoreInfo].[Addtional_Property_42] AS [Addtional_Property_42], 
+    [Person_WithMoreInfo].[Addtional_Property_43] AS [Addtional_Property_43], 
+    [Person_WithMoreInfo].[Addtional_Property_44] AS [Addtional_Property_44], 
+    [Person_WithMoreInfo].[Addtional_Property_45] AS [Addtional_Property_45], 
+    [Person_WithMoreInfo].[Addtional_Property_46] AS [Addtional_Property_46], 
+    [Person_WithMoreInfo].[Addtional_Property_47] AS [Addtional_Property_47], 
+    [Person_WithMoreInfo].[Addtional_Property_48] AS [Addtional_Property_48], 
+    [Person_WithMoreInfo].[Addtional_Property_49] AS [Addtional_Property_49], 
+    [Person_WithMoreInfo].[Addtional_Property_50] AS [Addtional_Property_50], 
+    [Person_WithMoreInfo].[Addtional_Property_51] AS [Addtional_Property_51], 
+    [Person_WithMoreInfo].[Addtional_Property_52] AS [Addtional_Property_52], 
+    [Person_WithMoreInfo].[Addtional_Property_53] AS [Addtional_Property_53], 
+    [Person_WithMoreInfo].[Addtional_Property_54] AS [Addtional_Property_54], 
+    [Person_WithMoreInfo].[Addtional_Property_55] AS [Addtional_Property_55], 
+    [Person_WithMoreInfo].[Addtional_Property_56] AS [Addtional_Property_56], 
+    [Person_WithMoreInfo].[Addtional_Property_57] AS [Addtional_Property_57], 
+    [Person_WithMoreInfo].[Addtional_Property_58] AS [Addtional_Property_58], 
+    [Person_WithMoreInfo].[Addtional_Property_59] AS [Addtional_Property_59], 
+    [Person_WithMoreInfo].[Addtional_Property_60] AS [Addtional_Property_60], 
+    [Person_WithMoreInfo].[Addtional_Property_61] AS [Addtional_Property_61], 
+    [Person_WithMoreInfo].[Addtional_Property_62] AS [Addtional_Property_62], 
+    [Person_WithMoreInfo].[Addtional_Property_63] AS [Addtional_Property_63], 
+    [Person_WithMoreInfo].[Addtional_Property_64] AS [Addtional_Property_64], 
+    [Person_WithMoreInfo].[Addtional_Property_65] AS [Addtional_Property_65], 
+    [Person_WithMoreInfo].[Addtional_Property_66] AS [Addtional_Property_66], 
+    [Person_WithMoreInfo].[Addtional_Property_67] AS [Addtional_Property_67], 
+    [Person_WithMoreInfo].[Addtional_Property_68] AS [Addtional_Property_68], 
+    [Person_WithMoreInfo].[Addtional_Property_69] AS [Addtional_Property_69], 
+    [Person_WithMoreInfo].[Addtional_Property_70] AS [Addtional_Property_70], 
+    [Person_WithMoreInfo].[Addtional_Property_71] AS [Addtional_Property_71], 
+    [Person_WithMoreInfo].[Addtional_Property_72] AS [Addtional_Property_72], 
+    [Person_WithMoreInfo].[Addtional_Property_73] AS [Addtional_Property_73], 
+    [Person_WithMoreInfo].[Addtional_Property_74] AS [Addtional_Property_74], 
+    [Person_WithMoreInfo].[Addtional_Property_75] AS [Addtional_Property_75], 
+    [Person_WithMoreInfo].[Addtional_Property_76] AS [Addtional_Property_76], 
+    [Person_WithMoreInfo].[Addtional_Property_77] AS [Addtional_Property_77], 
+    [Person_WithMoreInfo].[Addtional_Property_78] AS [Addtional_Property_78], 
+    [Person_WithMoreInfo].[Addtional_Property_79] AS [Addtional_Property_79], 
+    [Person_WithMoreInfo].[Addtional_Property_80] AS [Addtional_Property_80], 
+    [Person_WithMoreInfo].[Addtional_Property_81] AS [Addtional_Property_81], 
+    [Person_WithMoreInfo].[Addtional_Property_82] AS [Addtional_Property_82], 
+    [Person_WithMoreInfo].[Addtional_Property_83] AS [Addtional_Property_83], 
+    [Person_WithMoreInfo].[Addtional_Property_84] AS [Addtional_Property_84], 
+    [Person_WithMoreInfo].[Addtional_Property_85] AS [Addtional_Property_85], 
+    [Person_WithMoreInfo].[Addtional_Property_86] AS [Addtional_Property_86], 
+    [Person_WithMoreInfo].[Addtional_Property_87] AS [Addtional_Property_87], 
+    [Person_WithMoreInfo].[Unique_Id] AS [Unique_Id]
+    FROM [dbo].[Person_WithMoreInfo] AS [Person_WithMoreInfo]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="Person_FK_Company_Id" Association="Self.Person_FK_Company_Id">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SimplifiedModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="Company_Id" />
+          </Key>
+          <Property Name="Company_Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="People" Relationship="SimplifiedModel.Person_FK_Company_Id" FromRole="Company" ToRole="Person" />
+        </EntityType>
+        <EntityContainer Name="SimplifiedModelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Companies" EntityType="Self.Company" />
+          <EntitySet Name="People" EntityType="SimplifiedModel.Person" />
+          <EntitySet Name="Person_WithMoreInfo" EntityType="SimplifiedModel.Person_WithMoreInfo" />
+          <AssociationSet Name="Person_FK_Company_Id" Association="SimplifiedModel.Person_FK_Company_Id">
+            <End Role="Company" EntitySet="Companies" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <FunctionImport Name="Person_GetForCompany" IsComposable="true" ReturnType="Collection(SimplifiedModel.Person_GetForCompany_Result)">
+            <Parameter Name="Company_Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Person_Id" />
+          </Key>
+          <Property Name="Person_Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Company_Id" Type="Int32" Nullable="false" />
+          <Property Name="Filter_Property_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Filter_Property_2" Type="Double" />
+          <Property Name="Addtional_Property_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_7" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_8" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_9" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_10" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_11" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_12" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_13" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_14" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_15" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_16" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_17" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_18" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_19" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_20" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_21" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_22" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_23" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_24" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_25" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_26" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_27" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_28" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_29" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_30" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_31" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_32" Type="Int32" />
+          <Property Name="Addtional_Property_33" Type="Int32" />
+          <Property Name="Addtional_Property_34" Type="Int32" />
+          <Property Name="Addtional_Property_35" Type="Int32" />
+          <Property Name="Addtional_Property_36" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_37" Type="Int32" />
+          <Property Name="Addtional_Property_38" Type="Int32" />
+          <Property Name="Addtional_Property_39" Type="Double" />
+          <Property Name="Addtional_Property_40" Type="Int32" />
+          <Property Name="Addtional_Property_41" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_42" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_43" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_44" Type="Int32" />
+          <Property Name="Addtional_Property_45" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_46" Type="Int32" />
+          <Property Name="Addtional_Property_47" Type="Guid" Nullable="false" />
+          <Property Name="Addtional_Property_48" Type="Boolean" />
+          <Property Name="Addtional_Property_49" Type="Boolean" />
+          <Property Name="Addtional_Property_50" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_51" Type="Double" />
+          <Property Name="Addtional_Property_52" Type="Boolean" />
+          <Property Name="Addtional_Property_53" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_54" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_55" Type="Int32" />
+          <Property Name="Addtional_Property_56" Type="Int32" />
+          <Property Name="Addtional_Property_57" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_58" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_59" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_60" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_61" Type="Boolean" />
+          <Property Name="Addtional_Property_62" Type="Int32" />
+          <Property Name="Addtional_Property_63" Type="Int32" />
+          <Property Name="Addtional_Property_64" Type="Int32" />
+          <Property Name="Addtional_Property_65" Type="Int32" />
+          <Property Name="Addtional_Property_66" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_67" Type="Int32" />
+          <Property Name="Addtional_Property_68" Type="Int32" />
+          <Property Name="Addtional_Property_69" Type="Int32" />
+          <Property Name="Addtional_Property_70" Type="Int32" />
+          <Property Name="Addtional_Property_71" Type="Guid" />
+          <Property Name="Addtional_Property_72" Type="Int32" />
+          <Property Name="Addtional_Property_73" Type="Int32" />
+          <Property Name="Addtional_Property_74" Type="Int32" />
+          <Property Name="Addtional_Property_75" Type="Int32" />
+          <Property Name="Addtional_Property_76" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_77" Type="Int32" />
+          <Property Name="Addtional_Property_78" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_79" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_80" Type="Int32" />
+          <Property Name="Addtional_Property_81" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_82" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_83" Type="Int32" />
+          <Property Name="Addtional_Property_84" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_85" Type="Int32" />
+          <Property Name="Addtional_Property_86" Type="Int32" />
+          <Property Name="Addtional_Property_87" Type="Int32" />
+          <NavigationProperty Name="Company" Relationship="SimplifiedModel.Person_FK_Company_Id" FromRole="Person" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="Person_WithMoreInfo">
+          <Key>
+            <PropertyRef Name="Person_Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="Company_Id" />
+            <PropertyRef Name="Addtional_Property_47" />
+            <PropertyRef Name="Addtional_Property_60" />
+            <PropertyRef Name="Addtional_Property_66" />
+            <PropertyRef Name="Addtional_Property_82" />
+          </Key>
+          <Property Name="Person_Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Company_Id" Type="Int32" Nullable="false" />
+          <Property Name="Filter_Property_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Filter_Property_2" Type="Double" />
+          <Property Name="Addtional_Property_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_7" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_8" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_9" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_10" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_11" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_12" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_13" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_14" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_15" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_16" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_17" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_18" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_19" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_20" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_21" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_22" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_23" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_24" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_25" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_26" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_27" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_28" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_29" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_30" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_31" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Addtional_Property_32" Type="Int32" />
+          <Property Name="Addtional_Property_33" Type="Int32" />
+          <Property Name="Addtional_Property_34" Type="Int32" />
+          <Property Name="Addtional_Property_35" Type="Int32" />
+          <Property Name="Addtional_Property_36" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_37" Type="Int32" />
+          <Property Name="Addtional_Property_38" Type="Int32" />
+          <Property Name="Addtional_Property_39" Type="Double" />
+          <Property Name="Addtional_Property_40" Type="Int32" />
+          <Property Name="Addtional_Property_41" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_42" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_43" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_44" Type="Int32" />
+          <Property Name="Addtional_Property_45" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_46" Type="Int32" />
+          <Property Name="Addtional_Property_47" Type="Guid" Nullable="false" />
+          <Property Name="Addtional_Property_48" Type="Boolean" />
+          <Property Name="Addtional_Property_49" Type="Boolean" />
+          <Property Name="Addtional_Property_50" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_51" Type="Double" />
+          <Property Name="Addtional_Property_52" Type="Boolean" />
+          <Property Name="Addtional_Property_53" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_54" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_55" Type="Int32" />
+          <Property Name="Addtional_Property_56" Type="Int32" />
+          <Property Name="Addtional_Property_57" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_58" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="Addtional_Property_59" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_60" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_61" Type="Boolean" />
+          <Property Name="Addtional_Property_62" Type="Int32" />
+          <Property Name="Addtional_Property_63" Type="Int32" />
+          <Property Name="Addtional_Property_64" Type="Int32" />
+          <Property Name="Addtional_Property_65" Type="Int32" />
+          <Property Name="Addtional_Property_66" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_67" Type="Int32" />
+          <Property Name="Addtional_Property_68" Type="Int32" />
+          <Property Name="Addtional_Property_69" Type="Int32" />
+          <Property Name="Addtional_Property_70" Type="Int32" />
+          <Property Name="Addtional_Property_71" Type="Guid" />
+          <Property Name="Addtional_Property_72" Type="Int32" />
+          <Property Name="Addtional_Property_73" Type="Int32" />
+          <Property Name="Addtional_Property_74" Type="Int32" />
+          <Property Name="Addtional_Property_75" Type="Int32" />
+          <Property Name="Addtional_Property_76" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_77" Type="Int32" />
+          <Property Name="Addtional_Property_78" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_79" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_80" Type="Int32" />
+          <Property Name="Addtional_Property_81" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Addtional_Property_82" Type="Boolean" Nullable="false" />
+          <Property Name="Addtional_Property_83" Type="Int32" />
+          <Property Name="Addtional_Property_84" Type="DateTime" Precision="3" />
+          <Property Name="Addtional_Property_85" Type="Int32" />
+          <Property Name="Addtional_Property_86" Type="Int32" />
+          <Property Name="Addtional_Property_87" Type="Int32" />
+          <Property Name="Unique_Id" Type="Guid" />
+        </EntityType>
+        <Association Name="Person_FK_Company_Id">
+          <End Type="SimplifiedModel.Company" Role="Company" Multiplicity="1" />
+          <End Type="SimplifiedModel.Person" Role="Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="Person_GetForCompany_Result">
+          <Property Type="Int32" Name="Person_Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="250" />
+          <Property Type="Int32" Name="Company_Id" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SimplifiedModelStoreContainer" CdmEntityContainer="SimplifiedModelEntities">
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="SimplifiedModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="SimplifiedModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="Addtional_Property_87" ColumnName="Addtional_Property_87" />
+                <ScalarProperty Name="Addtional_Property_86" ColumnName="Addtional_Property_86" />
+                <ScalarProperty Name="Addtional_Property_85" ColumnName="Addtional_Property_85" />
+                <ScalarProperty Name="Addtional_Property_84" ColumnName="Addtional_Property_84" />
+                <ScalarProperty Name="Addtional_Property_83" ColumnName="Addtional_Property_83" />
+                <ScalarProperty Name="Addtional_Property_82" ColumnName="Addtional_Property_82" />
+                <ScalarProperty Name="Addtional_Property_81" ColumnName="Addtional_Property_81" />
+                <ScalarProperty Name="Addtional_Property_80" ColumnName="Addtional_Property_80" />
+                <ScalarProperty Name="Addtional_Property_79" ColumnName="Addtional_Property_79" />
+                <ScalarProperty Name="Addtional_Property_78" ColumnName="Addtional_Property_78" />
+                <ScalarProperty Name="Addtional_Property_77" ColumnName="Addtional_Property_77" />
+                <ScalarProperty Name="Addtional_Property_76" ColumnName="Addtional_Property_76" />
+                <ScalarProperty Name="Addtional_Property_75" ColumnName="Addtional_Property_75" />
+                <ScalarProperty Name="Addtional_Property_74" ColumnName="Addtional_Property_74" />
+                <ScalarProperty Name="Addtional_Property_73" ColumnName="Addtional_Property_73" />
+                <ScalarProperty Name="Addtional_Property_72" ColumnName="Addtional_Property_72" />
+                <ScalarProperty Name="Addtional_Property_71" ColumnName="Addtional_Property_71" />
+                <ScalarProperty Name="Addtional_Property_70" ColumnName="Addtional_Property_70" />
+                <ScalarProperty Name="Addtional_Property_69" ColumnName="Addtional_Property_69" />
+                <ScalarProperty Name="Addtional_Property_68" ColumnName="Addtional_Property_68" />
+                <ScalarProperty Name="Addtional_Property_67" ColumnName="Addtional_Property_67" />
+                <ScalarProperty Name="Addtional_Property_66" ColumnName="Addtional_Property_66" />
+                <ScalarProperty Name="Addtional_Property_65" ColumnName="Addtional_Property_65" />
+                <ScalarProperty Name="Addtional_Property_64" ColumnName="Addtional_Property_64" />
+                <ScalarProperty Name="Addtional_Property_63" ColumnName="Addtional_Property_63" />
+                <ScalarProperty Name="Addtional_Property_62" ColumnName="Addtional_Property_62" />
+                <ScalarProperty Name="Addtional_Property_61" ColumnName="Addtional_Property_61" />
+                <ScalarProperty Name="Addtional_Property_60" ColumnName="Addtional_Property_60" />
+                <ScalarProperty Name="Addtional_Property_59" ColumnName="Addtional_Property_59" />
+                <ScalarProperty Name="Addtional_Property_58" ColumnName="Addtional_Property_58" />
+                <ScalarProperty Name="Addtional_Property_57" ColumnName="Addtional_Property_57" />
+                <ScalarProperty Name="Addtional_Property_56" ColumnName="Addtional_Property_56" />
+                <ScalarProperty Name="Addtional_Property_55" ColumnName="Addtional_Property_55" />
+                <ScalarProperty Name="Addtional_Property_54" ColumnName="Addtional_Property_54" />
+                <ScalarProperty Name="Addtional_Property_53" ColumnName="Addtional_Property_53" />
+                <ScalarProperty Name="Addtional_Property_52" ColumnName="Addtional_Property_52" />
+                <ScalarProperty Name="Addtional_Property_51" ColumnName="Addtional_Property_51" />
+                <ScalarProperty Name="Addtional_Property_50" ColumnName="Addtional_Property_50" />
+                <ScalarProperty Name="Addtional_Property_49" ColumnName="Addtional_Property_49" />
+                <ScalarProperty Name="Addtional_Property_48" ColumnName="Addtional_Property_48" />
+                <ScalarProperty Name="Addtional_Property_47" ColumnName="Addtional_Property_47" />
+                <ScalarProperty Name="Addtional_Property_46" ColumnName="Addtional_Property_46" />
+                <ScalarProperty Name="Addtional_Property_45" ColumnName="Addtional_Property_45" />
+                <ScalarProperty Name="Addtional_Property_44" ColumnName="Addtional_Property_44" />
+                <ScalarProperty Name="Addtional_Property_43" ColumnName="Addtional_Property_43" />
+                <ScalarProperty Name="Addtional_Property_42" ColumnName="Addtional_Property_42" />
+                <ScalarProperty Name="Addtional_Property_41" ColumnName="Addtional_Property_41" />
+                <ScalarProperty Name="Addtional_Property_40" ColumnName="Addtional_Property_40" />
+                <ScalarProperty Name="Addtional_Property_39" ColumnName="Addtional_Property_39" />
+                <ScalarProperty Name="Addtional_Property_38" ColumnName="Addtional_Property_38" />
+                <ScalarProperty Name="Addtional_Property_37" ColumnName="Addtional_Property_37" />
+                <ScalarProperty Name="Addtional_Property_36" ColumnName="Addtional_Property_36" />
+                <ScalarProperty Name="Addtional_Property_35" ColumnName="Addtional_Property_35" />
+                <ScalarProperty Name="Addtional_Property_34" ColumnName="Addtional_Property_34" />
+                <ScalarProperty Name="Addtional_Property_33" ColumnName="Addtional_Property_33" />
+                <ScalarProperty Name="Addtional_Property_32" ColumnName="Addtional_Property_32" />
+                <ScalarProperty Name="Addtional_Property_31" ColumnName="Addtional_Property_31" />
+                <ScalarProperty Name="Addtional_Property_30" ColumnName="Addtional_Property_30" />
+                <ScalarProperty Name="Addtional_Property_29" ColumnName="Addtional_Property_29" />
+                <ScalarProperty Name="Addtional_Property_28" ColumnName="Addtional_Property_28" />
+                <ScalarProperty Name="Addtional_Property_27" ColumnName="Addtional_Property_27" />
+                <ScalarProperty Name="Addtional_Property_26" ColumnName="Addtional_Property_26" />
+                <ScalarProperty Name="Addtional_Property_25" ColumnName="Addtional_Property_25" />
+                <ScalarProperty Name="Addtional_Property_24" ColumnName="Addtional_Property_24" />
+                <ScalarProperty Name="Addtional_Property_23" ColumnName="Addtional_Property_23" />
+                <ScalarProperty Name="Addtional_Property_22" ColumnName="Addtional_Property_22" />
+                <ScalarProperty Name="Addtional_Property_21" ColumnName="Addtional_Property_21" />
+                <ScalarProperty Name="Addtional_Property_20" ColumnName="Addtional_Property_20" />
+                <ScalarProperty Name="Addtional_Property_19" ColumnName="Addtional_Property_19" />
+                <ScalarProperty Name="Addtional_Property_18" ColumnName="Addtional_Property_18" />
+                <ScalarProperty Name="Addtional_Property_17" ColumnName="Addtional_Property_17" />
+                <ScalarProperty Name="Addtional_Property_16" ColumnName="Addtional_Property_16" />
+                <ScalarProperty Name="Addtional_Property_15" ColumnName="Addtional_Property_15" />
+                <ScalarProperty Name="Addtional_Property_14" ColumnName="Addtional_Property_14" />
+                <ScalarProperty Name="Addtional_Property_13" ColumnName="Addtional_Property_13" />
+                <ScalarProperty Name="Addtional_Property_12" ColumnName="Addtional_Property_12" />
+                <ScalarProperty Name="Addtional_Property_11" ColumnName="Addtional_Property_11" />
+                <ScalarProperty Name="Addtional_Property_10" ColumnName="Addtional_Property_10" />
+                <ScalarProperty Name="Addtional_Property_9" ColumnName="Addtional_Property_9" />
+                <ScalarProperty Name="Addtional_Property_8" ColumnName="Addtional_Property_8" />
+                <ScalarProperty Name="Addtional_Property_7" ColumnName="Addtional_Property_7" />
+                <ScalarProperty Name="Addtional_Property_6" ColumnName="Addtional_Property_6" />
+                <ScalarProperty Name="Addtional_Property_5" ColumnName="Addtional_Property_5" />
+                <ScalarProperty Name="Addtional_Property_4" ColumnName="Addtional_Property_4" />
+                <ScalarProperty Name="Addtional_Property_3" ColumnName="Addtional_Property_3" />
+                <ScalarProperty Name="Addtional_Property_2" ColumnName="Addtional_Property_2" />
+                <ScalarProperty Name="Addtional_Property_1" ColumnName="Addtional_Property_1" />
+                <ScalarProperty Name="Filter_Property_2" ColumnName="Filter_Property_2" />
+                <ScalarProperty Name="Filter_Property_1" ColumnName="Filter_Property_1" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Person_Id" ColumnName="Person_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Person_WithMoreInfo">
+            <EntityTypeMapping TypeName="SimplifiedModel.Person_WithMoreInfo">
+              <MappingFragment StoreEntitySet="Person_WithMoreInfo">
+                <ScalarProperty Name="Unique_Id" ColumnName="Unique_Id" />
+                <ScalarProperty Name="Addtional_Property_87" ColumnName="Addtional_Property_87" />
+                <ScalarProperty Name="Addtional_Property_86" ColumnName="Addtional_Property_86" />
+                <ScalarProperty Name="Addtional_Property_85" ColumnName="Addtional_Property_85" />
+                <ScalarProperty Name="Addtional_Property_84" ColumnName="Addtional_Property_84" />
+                <ScalarProperty Name="Addtional_Property_83" ColumnName="Addtional_Property_83" />
+                <ScalarProperty Name="Addtional_Property_82" ColumnName="Addtional_Property_82" />
+                <ScalarProperty Name="Addtional_Property_81" ColumnName="Addtional_Property_81" />
+                <ScalarProperty Name="Addtional_Property_80" ColumnName="Addtional_Property_80" />
+                <ScalarProperty Name="Addtional_Property_79" ColumnName="Addtional_Property_79" />
+                <ScalarProperty Name="Addtional_Property_78" ColumnName="Addtional_Property_78" />
+                <ScalarProperty Name="Addtional_Property_77" ColumnName="Addtional_Property_77" />
+                <ScalarProperty Name="Addtional_Property_76" ColumnName="Addtional_Property_76" />
+                <ScalarProperty Name="Addtional_Property_75" ColumnName="Addtional_Property_75" />
+                <ScalarProperty Name="Addtional_Property_74" ColumnName="Addtional_Property_74" />
+                <ScalarProperty Name="Addtional_Property_73" ColumnName="Addtional_Property_73" />
+                <ScalarProperty Name="Addtional_Property_72" ColumnName="Addtional_Property_72" />
+                <ScalarProperty Name="Addtional_Property_71" ColumnName="Addtional_Property_71" />
+                <ScalarProperty Name="Addtional_Property_70" ColumnName="Addtional_Property_70" />
+                <ScalarProperty Name="Addtional_Property_69" ColumnName="Addtional_Property_69" />
+                <ScalarProperty Name="Addtional_Property_68" ColumnName="Addtional_Property_68" />
+                <ScalarProperty Name="Addtional_Property_67" ColumnName="Addtional_Property_67" />
+                <ScalarProperty Name="Addtional_Property_66" ColumnName="Addtional_Property_66" />
+                <ScalarProperty Name="Addtional_Property_65" ColumnName="Addtional_Property_65" />
+                <ScalarProperty Name="Addtional_Property_64" ColumnName="Addtional_Property_64" />
+                <ScalarProperty Name="Addtional_Property_63" ColumnName="Addtional_Property_63" />
+                <ScalarProperty Name="Addtional_Property_62" ColumnName="Addtional_Property_62" />
+                <ScalarProperty Name="Addtional_Property_61" ColumnName="Addtional_Property_61" />
+                <ScalarProperty Name="Addtional_Property_60" ColumnName="Addtional_Property_60" />
+                <ScalarProperty Name="Addtional_Property_59" ColumnName="Addtional_Property_59" />
+                <ScalarProperty Name="Addtional_Property_58" ColumnName="Addtional_Property_58" />
+                <ScalarProperty Name="Addtional_Property_57" ColumnName="Addtional_Property_57" />
+                <ScalarProperty Name="Addtional_Property_56" ColumnName="Addtional_Property_56" />
+                <ScalarProperty Name="Addtional_Property_55" ColumnName="Addtional_Property_55" />
+                <ScalarProperty Name="Addtional_Property_54" ColumnName="Addtional_Property_54" />
+                <ScalarProperty Name="Addtional_Property_53" ColumnName="Addtional_Property_53" />
+                <ScalarProperty Name="Addtional_Property_52" ColumnName="Addtional_Property_52" />
+                <ScalarProperty Name="Addtional_Property_51" ColumnName="Addtional_Property_51" />
+                <ScalarProperty Name="Addtional_Property_50" ColumnName="Addtional_Property_50" />
+                <ScalarProperty Name="Addtional_Property_49" ColumnName="Addtional_Property_49" />
+                <ScalarProperty Name="Addtional_Property_48" ColumnName="Addtional_Property_48" />
+                <ScalarProperty Name="Addtional_Property_47" ColumnName="Addtional_Property_47" />
+                <ScalarProperty Name="Addtional_Property_46" ColumnName="Addtional_Property_46" />
+                <ScalarProperty Name="Addtional_Property_45" ColumnName="Addtional_Property_45" />
+                <ScalarProperty Name="Addtional_Property_44" ColumnName="Addtional_Property_44" />
+                <ScalarProperty Name="Addtional_Property_43" ColumnName="Addtional_Property_43" />
+                <ScalarProperty Name="Addtional_Property_42" ColumnName="Addtional_Property_42" />
+                <ScalarProperty Name="Addtional_Property_41" ColumnName="Addtional_Property_41" />
+                <ScalarProperty Name="Addtional_Property_40" ColumnName="Addtional_Property_40" />
+                <ScalarProperty Name="Addtional_Property_39" ColumnName="Addtional_Property_39" />
+                <ScalarProperty Name="Addtional_Property_38" ColumnName="Addtional_Property_38" />
+                <ScalarProperty Name="Addtional_Property_37" ColumnName="Addtional_Property_37" />
+                <ScalarProperty Name="Addtional_Property_36" ColumnName="Addtional_Property_36" />
+                <ScalarProperty Name="Addtional_Property_35" ColumnName="Addtional_Property_35" />
+                <ScalarProperty Name="Addtional_Property_34" ColumnName="Addtional_Property_34" />
+                <ScalarProperty Name="Addtional_Property_33" ColumnName="Addtional_Property_33" />
+                <ScalarProperty Name="Addtional_Property_32" ColumnName="Addtional_Property_32" />
+                <ScalarProperty Name="Addtional_Property_31" ColumnName="Addtional_Property_31" />
+                <ScalarProperty Name="Addtional_Property_30" ColumnName="Addtional_Property_30" />
+                <ScalarProperty Name="Addtional_Property_29" ColumnName="Addtional_Property_29" />
+                <ScalarProperty Name="Addtional_Property_28" ColumnName="Addtional_Property_28" />
+                <ScalarProperty Name="Addtional_Property_27" ColumnName="Addtional_Property_27" />
+                <ScalarProperty Name="Addtional_Property_26" ColumnName="Addtional_Property_26" />
+                <ScalarProperty Name="Addtional_Property_25" ColumnName="Addtional_Property_25" />
+                <ScalarProperty Name="Addtional_Property_24" ColumnName="Addtional_Property_24" />
+                <ScalarProperty Name="Addtional_Property_23" ColumnName="Addtional_Property_23" />
+                <ScalarProperty Name="Addtional_Property_22" ColumnName="Addtional_Property_22" />
+                <ScalarProperty Name="Addtional_Property_21" ColumnName="Addtional_Property_21" />
+                <ScalarProperty Name="Addtional_Property_20" ColumnName="Addtional_Property_20" />
+                <ScalarProperty Name="Addtional_Property_19" ColumnName="Addtional_Property_19" />
+                <ScalarProperty Name="Addtional_Property_18" ColumnName="Addtional_Property_18" />
+                <ScalarProperty Name="Addtional_Property_17" ColumnName="Addtional_Property_17" />
+                <ScalarProperty Name="Addtional_Property_16" ColumnName="Addtional_Property_16" />
+                <ScalarProperty Name="Addtional_Property_15" ColumnName="Addtional_Property_15" />
+                <ScalarProperty Name="Addtional_Property_14" ColumnName="Addtional_Property_14" />
+                <ScalarProperty Name="Addtional_Property_13" ColumnName="Addtional_Property_13" />
+                <ScalarProperty Name="Addtional_Property_12" ColumnName="Addtional_Property_12" />
+                <ScalarProperty Name="Addtional_Property_11" ColumnName="Addtional_Property_11" />
+                <ScalarProperty Name="Addtional_Property_10" ColumnName="Addtional_Property_10" />
+                <ScalarProperty Name="Addtional_Property_9" ColumnName="Addtional_Property_9" />
+                <ScalarProperty Name="Addtional_Property_8" ColumnName="Addtional_Property_8" />
+                <ScalarProperty Name="Addtional_Property_7" ColumnName="Addtional_Property_7" />
+                <ScalarProperty Name="Addtional_Property_6" ColumnName="Addtional_Property_6" />
+                <ScalarProperty Name="Addtional_Property_5" ColumnName="Addtional_Property_5" />
+                <ScalarProperty Name="Addtional_Property_4" ColumnName="Addtional_Property_4" />
+                <ScalarProperty Name="Addtional_Property_3" ColumnName="Addtional_Property_3" />
+                <ScalarProperty Name="Addtional_Property_2" ColumnName="Addtional_Property_2" />
+                <ScalarProperty Name="Addtional_Property_1" ColumnName="Addtional_Property_1" />
+                <ScalarProperty Name="Filter_Property_2" ColumnName="Filter_Property_2" />
+                <ScalarProperty Name="Filter_Property_1" ColumnName="Filter_Property_1" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Person_Id" ColumnName="Person_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Person_GetForCompany" FunctionName="SimplifiedModel.Store.Person_GetForCompany">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SimplifiedModel.Person_GetForCompany_Result">
+                <ScalarProperty Name="Person_Id" ColumnName="Person_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
